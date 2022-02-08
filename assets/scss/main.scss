@@ -1,0 +1,19 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+
+// components
+@import 'components/btn';
+@import 'components/blog-card';
+
+// layouts
+@import 'layout/header';
+@import 'layout/hero-section';
+@import 'layout/about';
+@import 'layout/feature';
+@import 'layout/partner';
+@import 'layout/footer';
+// @import 'layout/responsive';

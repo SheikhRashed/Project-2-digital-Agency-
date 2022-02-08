@@ -1,0 +1,26 @@
+// ==== Responsive  ====== \\
+@mixin max($size) {
+	@media (max-width: $size) {
+		@content;
+	}
+}
+
+@mixin min($size) {
+	@media (min-width: $size) {
+		@content;
+	}
+}
+
+@mixin min-max($min, $max) {
+	@media (min-width: $min) and (max-width: $max) {
+		@content;
+	}
+}
+
+// 0  <=  767px
+//  575px
+// 480px
+// 320
+
+// 0 <= 991px
+// 0 <= 1200px
