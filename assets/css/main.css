@@ -265,6 +265,8 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 30px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .about-top__left {
@@ -302,8 +304,32 @@ section {
   padding: 10px;
 }
 
+@media (max-width: 480px) {
+  .about-top__right p {
+    padding: 30px 0;
+  }
+}
+
+.about-bottom {
+  position: relative;
+}
+
 .about-bottom img {
   width: 100%;
+}
+
+.about-bottom .play-btn {
+  position: absolute;
+  width: 70px;
+  top: 40%;
+  left: 45%;
+  bottom: 50%;
+}
+
+@media (max-width: 480px) {
+  .about-bottom .play-btn {
+    width: 50px;
+  }
 }
 
 .service-section h2 {
