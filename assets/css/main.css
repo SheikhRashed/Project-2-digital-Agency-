@@ -129,6 +129,8 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 480px) {
@@ -139,12 +141,22 @@ section {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .navbar__menu {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    top: 70px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    padding: 20px 0;
   }
+}
+
+.navbar__menu ul {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .navbar__menu ul li {
@@ -152,9 +164,11 @@ section {
   padding: 0 15px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .navbar__menu ul li {
     display: block;
+    padding: 10px 0;
+    text-align: center;
   }
 }
 
@@ -167,7 +181,13 @@ section {
   color: #5454D4;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
+  .navbar__menu ul li a {
+    color: #000;
+  }
+}
+
+@media (max-width: 767px) {
   .navbar__btn {
     display: none;
   }
@@ -183,6 +203,16 @@ section {
 .navbar__btn a.btn:hover {
   background-color: #5454D4;
   border: 2px solid #5454D4;
+}
+
+.navbar__icon {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navbar__icon {
+    display: block;
+  }
 }
 
 .hero {
