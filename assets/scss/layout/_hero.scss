@@ -6,8 +6,11 @@
     }
     &__left{
         padding-top: 30px;
-        padding-right: 150px;
+        padding-right: 50px;
         flex: 0 0 45%;
+        @include max(991px){
+            padding-right: 10px; 
+        }
         @include max(480px){
             flex: 0 0 100%;
             padding-right: 15px;

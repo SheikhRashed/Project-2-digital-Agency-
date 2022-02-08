@@ -27,7 +27,7 @@ h1 {
 
 h2 {
   font-weight: 700;
-  font-size: 39.8214px;
+  font-size: 40px;
   line-height: 46px;
 }
 
@@ -43,7 +43,7 @@ h3 {
 p {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 26px;
   letter-spacing: -0.43573px;
   color: rgba(255, 255, 255, 0.7);
@@ -203,10 +203,16 @@ section {
 
 .hero__left {
   padding-top: 30px;
-  padding-right: 150px;
+  padding-right: 50px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 45%;
           flex: 0 0 45%;
+}
+
+@media (max-width: 991px) {
+  .hero__left {
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -276,11 +282,14 @@ section {
   padding-right: 20px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .about-top__left {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+  }
+  .about-top__left h2 {
+    font-size: 36px;
   }
 }
 
@@ -290,7 +299,7 @@ section {
           flex: 0 0 50%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .about-top__right {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -299,12 +308,11 @@ section {
 }
 
 .about-top__right p {
-  width: 400px;
   max-width: 100%;
   padding: 10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .about-top__right p {
     padding: 30px 0;
   }
@@ -327,7 +335,7 @@ section {
   bottom: 50%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .about-bottom .play-btn {
     width: 50px;
   }
