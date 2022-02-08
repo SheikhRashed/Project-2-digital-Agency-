@@ -1,0 +1,22 @@
+.footer-section{
+    .footer-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include max(767px){
+            flex-direction: column;
+        }
+        .footer-menu{
+            ul{
+                li{
+                    display: inline-block;
+                    text-align: center;
+                    margin: 5px 10px;
+                    @include max(480px){
+                        display: block;   
+                    }
+                }
+            }
+        }
+    }
+}

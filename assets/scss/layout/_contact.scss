@@ -1,12 +1,26 @@
 .contact-section{
     background: rgba(30, 30, 32, 0.5);
+    padding: 120px 0;
     .contact-wrap{
         display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
         h2{
-            flex: 0 0 60%;
+            flex: 0 0 70%;
+            @include max(767px){
+                flex: 0 0 100%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
         }
         .contact-btn{
-            flex: 0 0 40%;
+            flex: 0 0 30%;
+            text-align: end;
+            @include max(767px){
+                flex: 0 0 100%;
+                text-align: center;
+            }
         }
     }
 }

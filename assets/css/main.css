@@ -256,6 +256,7 @@ section {
   width: 100%;
   position: relative;
 }
+
 .service-section h2 {
   text-align: center;
 }
@@ -360,22 +361,84 @@ section {
 
 .contact-section {
   background: rgba(30, 30, 32, 0.5);
+  padding: 120px 0;
 }
 
 .contact-section .contact-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-section .contact-wrap h2 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 60%;
-          flex: 0 0 60%;
+      -ms-flex: 0 0 70%;
+          flex: 0 0 70%;
+}
+
+@media (max-width: 767px) {
+  .contact-section .contact-wrap h2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }
 
 .contact-section .contact-wrap .contact-btn {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  text-align: end;
+}
+
+@media (max-width: 767px) {
+  .contact-section .contact-wrap .contact-btn {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    text-align: center;
+  }
+}
+
+.footer-section .footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .footer-section .footer-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer-section .footer-wrap .footer-menu ul li {
+  display: inline-block;
+  text-align: center;
+  margin: 5px 10px;
+}
+
+@media (max-width: 480px) {
+  .footer-section .footer-wrap .footer-menu ul li {
+    display: block;
+  }
 }
