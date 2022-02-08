@@ -259,6 +259,7 @@ section {
 
 .service-section h2 {
   text-align: center;
+  padding: 10px 0px 50px;
 }
 
 .service-section .service-wrap {
@@ -408,6 +409,10 @@ section {
             flex: 0 0 100%;
     text-align: center;
   }
+}
+
+.footer-section {
+  padding: 30px 0px 60px;
 }
 
 .footer-section .footer-wrap {
