@@ -379,10 +379,6 @@ section {
   }
 }
 
-.portfolio-section .portfolio-wrap .portfolio-item {
-  text-align: center;
-}
-
 .portfolio-section .portfolio-wrap .portfolio-item a {
   background: #1E1E20;
   border-radius: 10px;
