@@ -3,22 +3,46 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    &__logo{
+        @include max(480px){
+            flex: 0 0 50%;
+        }
+    }
     &__menu{
+        @include max(480px){
+            flex: 0 0 50%;
+        }
         ul{
+            @include max(480px){
+                // display: none;
+            }   
             li{
             
                 display: inline-block;
                 padding: 0 15px;
-                // &:first-child{
-                //     a{
-                //         color: #5454D4;  
-                //     }
-                // }
+                @include max(480px){
+                    display: block;
+                }
               a{
+                transition: all .3s ease;
                   &:active, &:hover{
                       color: #5454D4;
                   }
               }
+            }
+        }
+    }
+    &__btn{
+        @include max(480px){
+            display: none;
+        }
+        a.btn{
+            background-color: transparent;
+            border: 2px solid #fff;
+            transition:all .3s ease;
+            &:hover{
+                background-color: #5454D4;
+                border: 2px solid #5454D4;
             }
         }
     }
