@@ -1,0 +1,86 @@
+.footer{
+    background: #000;
+    position: relative;
+    z-index: 1;
+    .footer__widgets{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 75px 0;
+        .footer__widget-item{
+            flex: 0 0 24%;
+            color: #fff;
+            margin-bottom: 30px;
+            @include max(991px){
+                flex: 0 0 48%;
+            }
+            @include max (525px){
+                flex: 0 0 100%;
+                .footer__widget__title,.footer__widget__text{
+                    text-align: center;
+                }
+            }
+            .footer__widget__title{
+                font-size: 18px;
+                line-height: 23px;
+                padding-bottom: 45px;
+                @include max(991px){
+                    padding-bottom: 15px;
+                }
+            }
+            .footer__widget__text{
+                font-size: 16px;
+                line-height: 16px;
+                @include max(1200px){
+                    font-size: 14px;
+                    list-height: 14px;
+                }
+                
+                p{
+                    &:first-child{
+                        padding-bottom: 10px;
+                    }
+                }
+                form{
+                    input, button{
+                        display: block;
+                        width: 100%;
+                    }
+                    input{
+                        padding: 15px 5px;
+                        text-align: center;
+                        margin-bottom: 10px;
+                    }
+                    .submit-btn{
+                        margin: 0;
+                    }
+                }
+            }
+            .footer-social{
+                    ul{
+                        display: flex;
+                        @include max(525px){
+                            justify-content: center;
+                        }
+                        li{
+                            padding-right: 25px;
+                        }
+                    }
+                }
+        }
+    }
+    .footer__svg{
+        position: absolute;
+        bottom: 0;
+        user-select: none;
+        z-index: -1;
+        @include max(767px){
+            &--left{
+                top: 0;
+            }
+        }
+        &--right{
+            right: 0;
+        }
+    }
+}
