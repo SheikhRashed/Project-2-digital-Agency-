@@ -1,0 +1,44 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    @include max(480px){
+        flex-wrap:wrap;
+    }
+    &__left{
+        padding-top: 30px;
+        padding-right: 150px;
+        flex: 0 0 45%;
+        @include max(480px){
+            flex: 0 0 100%;
+            padding-right: 15px;
+        }
+        h1{
+            @include max(480px){
+                font-size: 42px;
+                line-height: 63px;
+            } 
+        }
+        p{
+            margin: 20px 0;
+            @include max(480px){
+                font-size: 16px;
+                line-height: 24px;
+            } 
+            
+        }
+    }
+    &__right{
+        flex:0 0 55%;
+        @include max(480px){
+            flex: 0 0 100%;
+            margin-top: 50px;
+        }
+        position: relative;
+        img{
+            width: 100%;
+            position: relative;
+            
+        }
+        
+    }
+}
