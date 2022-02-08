@@ -30,12 +30,13 @@
     img{
         
         width: 100%;
+        height: auto;
     }
     .play-btn{
         position: absolute;
         width: 70px;
         top:40%;
-        left:45%;
+        left:47%;
         bottom: 50%;
         @include max(480px){
             width: 50px;

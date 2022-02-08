@@ -316,13 +316,14 @@ section {
 
 .about-bottom img {
   width: 100%;
+  height: auto;
 }
 
 .about-bottom .play-btn {
   position: absolute;
   width: 70px;
   top: 40%;
-  left: 45%;
+  left: 47%;
   bottom: 50%;
 }
 
