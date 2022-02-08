@@ -1,0 +1,12 @@
+.contact-section{
+    background: rgba(30, 30, 32, 0.5);
+    .contact-wrap{
+        display: flex;
+        h2{
+            flex: 0 0 60%;
+        }
+        .contact-btn{
+            flex: 0 0 40%;
+        }
+    }
+}

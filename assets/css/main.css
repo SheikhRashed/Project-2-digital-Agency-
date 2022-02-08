@@ -228,3 +228,25 @@ ol {
     margin-top: 0px;
   }
 }
+
+.contact-section {
+  background: rgba(30, 30, 32, 0.5);
+}
+
+.contact-section .contact-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-section .contact-wrap h2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+}
+
+.contact-section .contact-wrap .contact-btn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
