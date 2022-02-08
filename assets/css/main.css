@@ -414,10 +414,6 @@ section {
   }
 }
 
-.portfolio-section .portfolio-wrap .portfolio-item {
-  text-align: center;
-}
-
 .portfolio-section .portfolio-wrap .portfolio-item a {
   background: #1E1E20;
   border-radius: 10px;
@@ -447,6 +443,12 @@ section {
 .contact-section {
   background: rgba(30, 30, 32, 0.5);
   padding: 120px 0;
+}
+
+@media (max-width: 525px) {
+  .contact-section {
+    padding: 80px 0;
+  }
 }
 
 .contact-section .contact-wrap {

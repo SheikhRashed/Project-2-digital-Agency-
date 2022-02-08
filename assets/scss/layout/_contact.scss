@@ -1,6 +1,9 @@
 .contact-section{
     background: rgba(30, 30, 32, 0.5);
     padding: 120px 0;
+    @include max(525px){
+        padding: 80px 0;
+    }
     .contact-wrap{
         display: flex;
         justify-content: space-between;
