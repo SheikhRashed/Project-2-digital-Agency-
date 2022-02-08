@@ -321,6 +321,9 @@ section {
   .about-top__left h2 {
     font-size: 36px;
   }
+  .about-top__left h2 br {
+    display: none;
+  }
 }
 
 .about-top__right {
@@ -374,6 +377,21 @@ section {
 .service-section h2 {
   text-align: center;
   padding: 10px 0px 50px;
+}
+
+@media (max-width: 767px) {
+  .service-section h2 br {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-section h2 {
+    padding: 10px 10px;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: left;
+  }
 }
 
 .service-section .service-wrap {
@@ -508,6 +526,11 @@ section {
             flex: 0 0 100%;
     text-align: center;
     margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 54px;
+  }
+  .contact-section .contact-wrap h2 br {
+    display: none;
   }
 }
 
