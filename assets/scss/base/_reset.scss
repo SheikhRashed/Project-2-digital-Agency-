@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Roboto:wght@700&display=swap');
 *,
 *::after,
 *::before {
@@ -8,32 +8,46 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	background-color: $bg_color;
+	color:#ffffff;
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Montserrat', sans-serif;
-}
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 15px;
-	@include max(768px) {
-		max-width: 100%;
-	}
-	
+h2
+ {
+	font-family: 'Roboto', sans-serif;
 }
 
-img {
-	max-width: 100%;
-	object-fit: cover;
+h1{
+font-weight: bold;
+font-size: 53px;
+line-height: 56px;
 }
+
+h2{
+font-weight: 700;
+font-size: 39.8214px;
+line-height: 46px;
+}
+
+h3{
+	font-family:  'Nunito Sans', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	letter-spacing: -0.497977px;
+
+}
+p{
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 26px;
+	letter-spacing: -0.43573px;
+	color: rgba(255, 255, 255, 0.7);
+	}
 a {
 	text-decoration: none;
 	display: inline-block;
@@ -44,7 +58,10 @@ a {
 		text-decoration: none;
 	}
 }
-
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
 button {
 	border: 0px;
 	outline: none;
@@ -60,4 +77,24 @@ button {
 ul,
 ol {
 	list-style: none;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	@include max(480px) {
+		max-width: 100%;
+	}
+	
+}
+
+.btn{
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+	color: #FFFFFF;
+	background-color:  #5454D4;
+	padding: 10px 15px;
+	border-radius: 5px;
 }

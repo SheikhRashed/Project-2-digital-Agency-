@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Roboto:wght@700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #19191B;
+  color: #ffffff;
+}
+
+h1,
+h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 53px;
+  line-height: 56px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 39.8214px;
+  line-height: 46px;
+}
+
+h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.497977px;
+}
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: -0.43573px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  border: 0px;
+  outline: none;
+  display: inline-block;
+  background-color: transparent;
+}
+
+button:hover, button:active {
+  outline: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.btn {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background-color: #5454D4;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.navbar {
+  padding: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__menu ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.navbar__menu ul li a:active, .navbar__menu ul li a:hover {
+  color: #5454D4;
+}
