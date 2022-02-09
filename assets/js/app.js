@@ -7,7 +7,7 @@ $(document).ready(function() {
    
   });
 
-
+ AOS.init();
   function mobileMenu() {
     console.log("clicked");
     const mobileMenu = document.querySelector(".navbar__menu");
