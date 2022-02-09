@@ -7,7 +7,7 @@ $(document).ready(function() {
    
   });
 
- AOS.init();
+
   function mobileMenu() {
     console.log("clicked");
     const mobileMenu = document.querySelector(".navbar__menu");
@@ -17,3 +17,7 @@ $(document).ready(function() {
         mobileMenu.style.display = "block";
     }
 }
+
+AOS.init({
+        easing: 'ease-in-out-sine'
+      });
