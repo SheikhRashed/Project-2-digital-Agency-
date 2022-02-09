@@ -99,6 +99,47 @@ section {
   }
 }
 
+.svg-animation {
+  -webkit-animation: move 1.5s infinite;
+          animation: move 1.5s infinite;
+}
+
+@-webkit-keyframes move {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    opacity: 0.25;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    opacity: 0.25;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .btn {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: bold;
@@ -226,44 +267,34 @@ section {
       flex-wrap: wrap;
 }
 
+@media (max-width: 767px) {
+  .hero {
+    display: block;
+  }
+}
+
 .hero__left {
   padding-top: 30px;
-  padding-right: 50px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  width: 450px;
 }
 
 @media (max-width: 991px) {
   .hero__left {
     padding-right: 10px;
+    width: 100%;
   }
 }
 
 @media (max-width: 767px) {
-  .hero__left {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    padding-right: 15px;
-  }
-}
-
-@media (min-width: 768px) {
-  .hero__left h1 br {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
   .hero__left h1 {
     font-size: 42px;
     line-height: 63px;
+    padding-bottom: 20px;
   }
 }
 
 .hero__left p {
-  margin: 20px 0;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 480px) {
@@ -274,10 +305,29 @@ section {
 }
 
 .hero__right {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  width: 50%;
   position: relative;
+  z-index: 1;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .hero__right {
+    width: 100%;
+  }
+}
+
+.hero__right .hero__right-bg {
+  width: 80%;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  z-index: -1;
+  bottom: -40px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .hero__right img {
@@ -285,13 +335,40 @@ section {
   position: relative;
 }
 
-@media (max-width: 767px) {
-  .hero__right {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    margin-top: 50px;
+@media (max-width: 991px) {
+  .hero__right img {
+    margin-top: 30px;
   }
+}
+
+.hero__right .hero-svg {
+  position: absolute;
+  z-index: -1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: auto;
+}
+
+.hero__right .hero-rate-svg {
+  top: 0;
+  left: 0;
+}
+
+.hero__right .hero-circle-svg {
+  top: 0;
+  right: 0;
+}
+
+.hero__right .hero-triangle-svg {
+  bottom: 0;
+  left: 0;
+}
+
+.hero__right .hero-plus-svg {
+  bottom: 0;
+  right: 0;
 }
 
 .about-top {
@@ -302,22 +379,22 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 30px 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .about-top {
+    display: block;
+  }
 }
 
 .about-top__left {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  width: 400px;
   padding-right: 20px;
 }
 
 @media (max-width: 767px) {
   .about-top__left {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    width: 100%;
   }
   .about-top__left h2 {
     font-size: 36px;
@@ -328,16 +405,12 @@ section {
 }
 
 .about-top__right {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  width: 50%;
 }
 
 @media (max-width: 767px) {
   .about-top__right {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    width: 100%;
   }
 }
 
@@ -454,7 +527,7 @@ section {
 
 .service-section .service-triangle {
   position: absolute;
-  top: 0;
+  top: -50px;
   left: 0;
   z-index: -1;
   -webkit-user-select: none;
