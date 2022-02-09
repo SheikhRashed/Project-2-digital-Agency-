@@ -6,10 +6,9 @@
     h2{
         text-align: center;
         padding: 10px 0px 50px;
+        max-width: 480px;
         @include max(767px){
-           br{
-               display:none;
-           }
+           max-width: 100%;
         }
         @include max(480px){
             padding: 10px 10px;

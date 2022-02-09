@@ -6,30 +6,28 @@
     .portfolio-wrap{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 45px 0;
         @include max(580px){
             flex-direction: column;
         }
         .portfolio-item{
             flex: 0 0 30%;
-            @include max(580px){
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            a{
-                background: #1E1E20;
-                border-radius: 10px;
-                padding: 16px;
+            background: #1E1E20;
+            border-radius: 10px;
+            padding: 16px;
+            img{
+                width: 100%;
             }
             &--two{
-                margin-top: 40px;
+                margin-top: 60px;
                 text-align: center;
                 @include max(580px){
                     margin-top: 0px;
                 }
             }
             &--three{
-                margin-top: 80px;
+                margin-top: 100px;
                 text-align: right;
                 @include max(580px){
                     margin-top: 0px;
