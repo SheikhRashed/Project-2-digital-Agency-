@@ -8,6 +8,7 @@
 
 		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 		<link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/main.css">
 	</head>
 	<body>
@@ -48,12 +49,13 @@
 							<a class="btn" href="#">Our Services <img src="assets/images/icon/Icon.svg" alt=""></a>
 						</div>
 						<div class="hero__right">
-							<img src="assets/images/person.png" alt="">
-							<img class="hero__right-bg" src="assets/images/person-rectangle.png" alt="" >
+							<img  src="assets/images/person.png" alt="">
+							<img  class="hero__right-bg" src="assets/images/person-rectangle.png" alt="" >
+
 							<img class="svg-animation hero-svg hero-rate-svg" src="./assets/images/icon/rate.svg" alt="">
-							<img class="svg-animation hero-svg hero-circle-svg" src="./assets/images/icon/circle.svg" alt="">
-							<img class="svg-animation hero-svg hero-triangle-svg" src="./assets/images/icon/triangle.svg" alt="">
-							<img class="svg-animation hero-svg hero-plus-svg" src="./assets/images/icon/plus.svg" alt="">
+							<img  class="svg-animation hero-svg hero-circle-svg" src="./assets/images/icon/circle.svg" alt="">
+							<img data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"class=" hero-svg hero-triangle-svg" src="./assets/images/icon/triangle.svg" alt="">
+							<img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class=" hero-svg hero-plus-svg" src="./assets/images/icon/plus.svg" alt="">
 						</div>
 					</div>
 				</div>
@@ -71,7 +73,9 @@
 							<p>Watch this one minute video so you understand why you should use our services!</p>
 						</div>
 					</div>
-					<div class="about-bottom">
+					<div class="about-bottom" data-aos="fade-right"
+						data-aos-offset="300"
+						data-aos-easing="ease-in-sine">
 						<a class="popup-youtube" href="https://www.youtube.com/watch?v=hsQ0KLQ3pRM"><img class="play-btn" src="assets/images/Play.png" alt="play"></a>
 						<img src="assets/images/about.png" alt="enver">
 					</div>
@@ -79,14 +83,18 @@
 				</div>
 			</section>
 			<!-- Service section -->
-			<section class="service-section">
+			<section class="service-section"  >
 				<div class="container">
-					<div class="section__title">
+					<div class="section__title" data-aos="fade-right"
+						data-aos-offset="300"
+						data-aos-easing="ease-in-sine">
 						<h2>
 							The Service We Provide For You
 						</h2>
 					</div>
-					<div class="service-wrap">
+					<div class="service-wrap" data-aos="fade-left"
+						data-aos-offset="300"
+     					data-aos-easing="ease-in-sine" >
 						<div class="service-item">
 							<div class="service-icon">
 								<img src="./assets/images/icon/service-01.svg" alt="">
@@ -149,9 +157,9 @@
 			</div>
 			</section>
 			<!-- Portfolio section  -->
-			<section class="portfolio-section">
+			<section class="portfolio-section" >
 				<div class="container">
-					<h2>
+					<h2 data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
 						Our Awesome Portofolio
 					</h2>
 					<!-- Slider main container -->
@@ -175,6 +183,7 @@
   <div class="swiper-scrollbar"></div>
 </div>
 					<div class="portfolio-wrap">
+					<div class="portfolio-wrap" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 						<a class="portfolio-item portfolio-item--one" href="">
 							<img src="./assets/images/portfolio-02.png" alt="">
 						</a>
@@ -193,10 +202,10 @@
 			<section class="contact-section">
 				<div class="container">
 					<div class="contact-wrap">
-						<div class="section__title">
+						<div class="section__title" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
 							<h2>Contact us for the service you want to use</h2>
 						</div>
-						<div class="contact-btn">
+						<div class="contact-btn" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 							<a class="btn" href="#">Contact Us</a>
 						</div>
 					</div>
@@ -233,6 +242,7 @@
 		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="assets/js/app.js"></script>
 	</body>
 </html>

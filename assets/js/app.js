@@ -13,3 +13,7 @@ function mobileMenu() {
         mobileMenu.style.display = "block";
     }
 }
+
+AOS.init({
+        easing: 'ease-in-out-sine'
+      });
