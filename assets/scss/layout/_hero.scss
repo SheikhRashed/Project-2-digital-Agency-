@@ -7,19 +7,25 @@
     &__left{
         padding-top: 30px;
         padding-right: 50px;
-        flex: 0 0 45%;
+        flex: 0 0 50%;
         @include max(991px){
             padding-right: 10px; 
         }
-        @include max(480px){
+        @include max(767px){
             flex: 0 0 100%;
             padding-right: 15px;
         }
         h1{
+            @include min(768px){
+                br{
+                    display:none;
+                }
+            }
             @include max(480px){
                 font-size: 42px;
                 line-height: 63px;
             } 
+          
         }
         p{
             margin: 20px 0;
@@ -31,8 +37,8 @@
         }
     }
     &__right{
-        flex:0 0 55%;
-        @include max(480px){
+        flex:0 0 50%;
+        @include max(767px){
             flex: 0 0 100%;
             margin-top: 50px;
         }
