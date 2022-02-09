@@ -38,6 +38,17 @@
     }
     &__right{
         flex:0 0 50%;
+        position: relative;
+        z-index: 1;
+        .hero__right-bg{
+            width: 80%;
+            position: absolute;
+            top: 30px;
+            left: 60px;
+            z-index: -1;
+            bottom: -40px;
+            user-select: none;
+        }
         @include max(767px){
             flex: 0 0 100%;
             margin-top: 50px;
@@ -48,6 +59,27 @@
             position: relative;
             
         }
-        
+        .hero-svg{
+            position: absolute;
+            z-index: -1;
+            user-select: none;
+            width: auto;
+        }
+        .hero-rate-svg{
+            top: 0;
+            left: 0;
+        }
+        .hero-circle-svg{
+            top: 0;
+            right: 0;
+        }
+        .hero-triangle-svg{
+            bottom: 0;
+            left: 0;
+        }
+        .hero-plus-svg{
+            bottom: 0;
+            right: 0;
+        }
     }
 }

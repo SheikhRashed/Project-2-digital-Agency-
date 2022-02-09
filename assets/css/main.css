@@ -99,6 +99,47 @@ section {
   }
 }
 
+.svg-animation {
+  -webkit-animation: move 1s infinite;
+          animation: move 1s infinite;
+}
+
+@-webkit-keyframes move {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    opacity: 0.25;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    opacity: 0.25;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .btn {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: bold;
@@ -283,6 +324,21 @@ section {
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   position: relative;
+  z-index: 1;
+  position: relative;
+}
+
+.hero__right .hero__right-bg {
+  width: 80%;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  z-index: -1;
+  bottom: -40px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media (max-width: 767px) {
@@ -297,6 +353,36 @@ section {
 .hero__right img {
   width: 100%;
   position: relative;
+}
+
+.hero__right .hero-svg {
+  position: absolute;
+  z-index: -1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: auto;
+}
+
+.hero__right .hero-rate-svg {
+  top: 0;
+  left: 0;
+}
+
+.hero__right .hero-circle-svg {
+  top: 0;
+  right: 0;
+}
+
+.hero__right .hero-triangle-svg {
+  bottom: 0;
+  left: 0;
+}
+
+.hero__right .hero-plus-svg {
+  bottom: 0;
+  right: 0;
 }
 
 .about-top {
@@ -459,7 +545,7 @@ section {
 
 .service-section .service-triangle {
   position: absolute;
-  top: 0;
+  top: -50px;
   left: 0;
   z-index: -1;
   -webkit-user-select: none;

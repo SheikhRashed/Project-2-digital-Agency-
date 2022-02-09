@@ -92,4 +92,20 @@ section{
 	}
 	
 }
-
+.svg-animation{
+	animation: move 1s infinite;
+}
+@keyframes move {
+  from {
+        transform : scale(1);
+        opacity   : 1;
+    }
+    50% {
+        transform : scale(0.75);
+        opacity   : 0.25;
+    }
+    to {
+        transform : scale(1);
+        opacity   : 1;
+    }
+}
