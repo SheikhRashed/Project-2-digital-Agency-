@@ -8,6 +8,9 @@
 	padding: 10px 20px;
 	border-radius: 5px;
 	border: 2px solid transparent;
+	display: block;
+    width: 150px;
+    text-align: center;
 	transition: all .3s ease;
 	&:hover{
 		background-color: transparent;
