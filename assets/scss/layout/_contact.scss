@@ -4,6 +4,10 @@
     @include max(525px){
         padding: 80px 0;
     }
+    .container{
+        position: relative;
+        z-index: 1;
+    }
     .contact-wrap{
         display: flex;
         justify-content: space-between;
@@ -28,5 +32,19 @@
                 text-align: center;
             }
         }
+    }
+    .contact-plus{
+        position: absolute;
+        top: -50px;
+        right: 0;
+        z-index: -1;
+        user-select: none;
+    }
+    .contact-circle{
+        position: absolute;
+        bottom: -80px;
+        left: 0;
+        z-index: -1;
+        user-select: none;
     }
 }

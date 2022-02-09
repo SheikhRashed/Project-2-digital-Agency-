@@ -1,4 +1,8 @@
 .service-section{
+    .container{
+        position: relative;
+        z-index: 1;
+    }
     h2{
         text-align: center;
         padding: 10px 0px 50px;
@@ -46,5 +50,26 @@
                 }
             }
         }
+    }
+    .service-triangle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        user-select: none;
+    }
+    .service-cross-right{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        user-select: none;
+    }
+    .service-cross-left{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        user-select: none;
     }
 }
