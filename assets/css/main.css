@@ -150,6 +150,9 @@ section {
   padding: 10px 20px;
   border-radius: 5px;
   border: 2px solid transparent;
+  display: block;
+  width: 150px;
+  text-align: center;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
