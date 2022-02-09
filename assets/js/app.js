@@ -1,14 +1,10 @@
-$(document).ready(function() {
-    $('.popup-youtube').magnificPopup({
-		type: 'iframe'
-	});
+$(document).ready(function () {
+    $(".popup-youtube").magnificPopup({
+        type: "iframe",
+    });
+});
 
-
-   
-  });
-
-
-  function mobileMenu() {
+function mobileMenu() {
     console.log("clicked");
     const mobileMenu = document.querySelector(".navbar__menu");
     if (mobileMenu.style.display === "block") {
