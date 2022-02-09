@@ -222,13 +222,8 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-@media (max-width: 480px) {
-  .hero {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .hero__left {
@@ -285,6 +280,11 @@ section {
   position: relative;
 }
 
+.hero__right img {
+  width: 100%;
+  position: relative;
+}
+
 @media (max-width: 767px) {
   .hero__right {
     -webkit-box-flex: 0;
@@ -292,11 +292,6 @@ section {
             flex: 0 0 100%;
     margin-top: 50px;
   }
-}
-
-.hero__right img {
-  width: 100%;
-  position: relative;
 }
 
 .about-top {
