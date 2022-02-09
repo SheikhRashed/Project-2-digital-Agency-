@@ -1,74 +1,61 @@
-.service-section{
-    .container{
-        position: relative;
-        z-index: 1;
+.service-section {
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .service-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+    @include max(991px) {
+      grid-gap: 30px 10px;
     }
-    h2{
-        text-align: center;
-        padding: 10px 0px 50px;
-        max-width: 480px;
-        @include max(767px){
-           max-width: 100%;
-        }
-        @include max(480px){
-            padding: 10px 10px;
-            font-size: 36px;
-            line-height: 54px;
-            text-align: left;
-        }
+    @include max(767px) {
+      grid-template-columns: 1fr 1fr;
     }
-    .service-wrap{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 60px;
-        @include max(991px){
-            grid-gap: 30px 10px;
-        }
-        @include max(767px){
-            grid-template-columns: 1fr 1fr;
-        }
-        @include max(525px){
-            grid-template-columns: 1fr;
-        }
-        .service-item{
-            text-align: center;
-            .service-icon{
-                img{
-                    background: rgba(84, 84, 212, 0.1);
-                    padding: 10px;
-                    border-radius: 50%;
-                }
-            }
-            .service-content{
-                padding: 0px 40px;
-                @include max(991px){
-                    padding: 0px 10px;
-                }
-                h3{
-                    margin: 15px 0;
-                }
-            }
-        }
+    @include max(525px) {
+      grid-template-columns: 1fr;
     }
-    .service-triangle{
-        position: absolute;
-        top: -50px;
-        left: 0;
-        z-index: -1;
-        user-select: none;
+    .service-item {
+      text-align: center;
+      .service-icon {
+        img {
+          background: rgba(84, 84, 212, 0.1);
+          padding: 10px;
+          border-radius: 50%;
+        }
+      }
+      .service-content {
+        padding: 0px 40px;
+        @include max(991px) {
+          padding: 0px 10px;
+        }
+        h3 {
+          margin: 15px 0;
+        }
+      }
     }
-    .service-cross-right{
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: -1;
-        user-select: none;
-    }
-    .service-cross-left{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        user-select: none;
-    }
+  }
+  .service-triangle {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    z-index: -1;
+    user-select: none;
+  }
+  .service-cross-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    user-select: none;
+  }
+  .service-cross-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    user-select: none;
+  }
 }

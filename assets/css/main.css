@@ -9,14 +9,14 @@
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   background-color: #19191B;
   color: #ffffff;
 }
 
 h1,
 h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -32,7 +32,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
@@ -41,7 +41,7 @@ h3 {
 }
 
 p {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -137,6 +137,26 @@ section {
     -webkit-transform: scale(1);
             transform: scale(1);
     opacity: 1;
+  }
+}
+
+.section__title {
+  text-align: center;
+  width: 480px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .section__title {
+    max-width: 100%;
+    display: block;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .section__title h2 {
+    font-size: 36px;
+    line-height: 54px;
   }
 }
 
@@ -288,6 +308,10 @@ section {
   }
 }
 
+.hero__left h1 {
+  padding-bottom: 30px;
+}
+
 @media (max-width: 767px) {
   .hero__left h1 {
     font-size: 42px;
@@ -297,7 +321,7 @@ section {
 }
 
 .hero__left p {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 @media (max-width: 480px) {
@@ -440,9 +464,10 @@ section {
 .about-bottom .play-btn {
   position: absolute;
   width: 70px;
-  top: 40%;
-  left: 47%;
-  bottom: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media (max-width: 767px) {
@@ -454,27 +479,6 @@ section {
 .service-section .container {
   position: relative;
   z-index: 1;
-}
-
-.service-section h2 {
-  text-align: center;
-  padding: 10px 0px 50px;
-  max-width: 480px;
-}
-
-@media (max-width: 767px) {
-  .service-section h2 {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .service-section h2 {
-    padding: 10px 10px;
-    font-size: 36px;
-    line-height: 54px;
-    text-align: left;
-  }
 }
 
 .service-section .service-wrap {
@@ -672,31 +676,15 @@ section {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.contact-section .contact-wrap h2 {
-  max-width: 480px;
-}
-
-@media (max-width: 767px) {
-  .contact-section .contact-wrap h2 {
-    display: block;
-    text-align: center;
-    max-width: 100%;
-    margin-bottom: 30px;
-    font-size: 36px;
-    line-height: 54px;
-  }
+.contact-section .contact-wrap .section__title {
+  text-align: left;
+  margin: 0;
 }
 
 .contact-section .contact-wrap .contact-btn {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
-  text-align: end;
+  float: right;
 }
 
 @media (max-width: 767px) {
@@ -759,6 +747,15 @@ section {
   display: inline-block;
   text-align: center;
   margin: 5px 10px;
+}
+
+.footer-section .footer-wrap .footer-menu ul li a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer-section .footer-wrap .footer-menu ul li a:hover {
+  color: #5454d4;
 }
 
 @media (max-width: 480px) {

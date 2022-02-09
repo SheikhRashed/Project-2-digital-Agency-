@@ -1,111 +1,122 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Roboto:wght@700&display=swap");
 *,
 *::after,
 *::before {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 body {
-	font-family: 'Nunito Sans', sans-serif;
-	background-color: $bg_color;
-	color:#ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: $bg_color;
+  color: #ffffff;
 }
 
 h1,
-h2
- {
-	font-family: 'Roboto', sans-serif;
+h2 {
+  font-family: "Roboto", sans-serif;
 }
 
-h1{
-font-weight: bold;
-font-size: 53px;
-line-height: 56px;
+h1 {
+  font-weight: bold;
+  font-size: 53px;
+  line-height: 56px;
 }
 
-h2{
-font-weight: 700;
-font-size: 40px;
-line-height: 46px;
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
 }
 
-h3{
-	font-family:  'Nunito Sans', sans-serif;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 25px;
-	text-align: center;
-	letter-spacing: -0.497977px;
-
+h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.497977px;
 }
-p{
-	font-family: 'Nunito Sans', sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 26px;
-	letter-spacing: -0.43573px;
-	color: rgba(255, 255, 255, 0.7);
-	}
+p {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.43573px;
+  color: rgba(255, 255, 255, 0.7);
+}
 a {
-	text-decoration: none;
-	display: inline-block;
-	cursor: pointer;
-	color: #fff;
-	&:hover,
-	&:active {
-		text-decoration: none;
-	}
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
 }
 img {
-	
-	max-width: 100%;
-	object-fit: cover;
+  max-width: 100%;
+  object-fit: cover;
 }
 button {
-	border: 0px;
-	outline: none;
-	display: inline-block;
-	background-color: transparent;
+  border: 0px;
+  outline: none;
+  display: inline-block;
+  background-color: transparent;
 
-	&:hover,
-	&:active {
-		outline: none;
-	}
+  &:hover,
+  &:active {
+    outline: none;
+  }
 }
 
 ul,
 ol {
-	list-style: none;
+  list-style: none;
 }
-section{
-	padding: 50px 0;
+section {
+  padding: 50px 0;
 }
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 15px;
-	@include max(480px) {
-		max-width: 100%;
-		padding: 0 30px;
-	}
-	
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include max(480px) {
+    max-width: 100%;
+    padding: 0 30px;
+  }
 }
-.svg-animation{
-	animation: move 1.5s infinite;
+.svg-animation {
+  animation: move 1.5s infinite;
 }
 @keyframes move {
   from {
-        transform : scale(1);
-        opacity   : 1;
-    }
+    transform: scale(1);
+    opacity: 1;
+  }
   50% {
-        transform : scale(0.75);
-        opacity   : 0.25;
-    }
+    transform: scale(0.75);
+    opacity: 0.25;
+  }
   to {
-        transform : scale(1);
-        opacity   : 1;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.section__title {
+  text-align: center;
+  width: 480px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  @include max(767px) {
+    max-width: 100%;
+    display: block;
+    text-align: left;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 36px;
+      line-height: 54px;
     }
+  }
 }
