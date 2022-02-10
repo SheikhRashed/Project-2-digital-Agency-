@@ -1,65 +1,66 @@
-.navbar{
-    padding: 25px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: all 0.3s ease;   
-    &__logo{
-        @include max(480px){
-            flex: 0 0 50%;
-        }
+.navbar {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  &__logo {
+    @include max(480px) {
+      flex: 0 0 50%;
     }
-    &__menu{
-        @include max(767px){
-            display: none;
-            position: absolute;
-            background-color: #fff;
-            top: 70px;
-            left: 0;
-            right: 0;
-            z-index: 3;
-            padding: 20px 0;
-        }
-        ul{     
-            transition: all 0.3s ease;   
-            li{    
-                display: inline-block;
-                padding: 0 15px;
-                @include max(767px){
-                    display: block;
-                    padding: 10px 0;
-                    text-align: center;
-                }
-              a{
-                transition: all .3s ease;
-                  &:active, &:hover{
-                      color: #5454D4;
-                  }
-                  @include max(767px){
-                    color: #000;
-                }
-              }
-            }
-        }
+  }
+  &__menu {
+    @include max(767px) {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      top: 70px;
+      left: 0;
+      right: 0;
+      z-index: 3;
+      padding: 20px 0;
     }
-    &__btn{
-        @include max(767px){
-            display: none;
+    ul {
+      li {
+        display: inline-block;
+        padding: 0 15px;
+        transition: all 0.3s ease;
+        @include max(767px) {
+          display: block;
+          padding: 10px 0;
+          text-align: center;
         }
-        a.btn{
-            background-color: transparent;
-            border: 2px solid #fff;
-            transition:all .3s ease;
-            &:hover{
-                background-color: #5454D4;
-                border: 2px solid #5454D4;
-            }
+        a {
+          transition: all 0.3s ease;
+          &:active,
+          &:hover {
+            color: #5454d4;
+          }
+          @include max(767px) {
+            color: #000;
+          }
         }
+      }
     }
-    &__icon{
-        display: none;
-        @include max(767px){
-            display: block;
-        }
+  }
+  &__btn {
+    @include max(767px) {
+      display: none;
     }
+    a.btn {
+      background-color: transparent;
+      border: 2px solid #fff;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: #5454d4;
+        border: 2px solid #5454d4;
+      }
+    }
+  }
+  &__icon {
+    display: none;
+    @include max(767px) {
+      display: block;
+    }
+  }
 }

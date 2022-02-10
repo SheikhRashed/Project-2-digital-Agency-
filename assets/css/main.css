@@ -9,6 +9,11 @@
 }
 
 body {
+  position: relative;
+  height: 100%;
+}
+
+body {
   font-family: "Nunito Sans", sans-serif;
   background-color: #19191B;
   color: #ffffff;
@@ -218,14 +223,11 @@ section {
   }
 }
 
-.navbar__menu ul {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
 .navbar__menu ul li {
   display: inline-block;
   padding: 0 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 767px) {
@@ -237,12 +239,12 @@ section {
 }
 
 .navbar__menu ul li a {
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .navbar__menu ul li a:active, .navbar__menu ul li a:hover {
-  color: #5454D4;
+  color: #5454d4;
 }
 
 @media (max-width: 767px) {
@@ -260,13 +262,13 @@ section {
 .navbar__btn a.btn {
   background-color: transparent;
   border: 2px solid #fff;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .navbar__btn a.btn:hover {
-  background-color: #5454D4;
-  border: 2px solid #5454D4;
+  background-color: #5454d4;
+  border: 2px solid #5454d4;
 }
 
 .navbar__icon {
@@ -716,6 +718,39 @@ section {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
 }
 
 .footer-section {

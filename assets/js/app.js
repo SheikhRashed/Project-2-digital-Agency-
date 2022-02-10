@@ -19,7 +19,7 @@ $(document).ready(function() {
 }
 
 AOS.init({
-        easing: 'ease-in-out-sine'
+       
       });
 
 var swiper = new Swiper(".mySwiper", {
@@ -36,12 +36,12 @@ var swiper = new Swiper(".mySwiper", {
         },
         breakpoints: {
           640: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 3,
-            spaceBetween: 40,
+            slidesPerView: 2,
+            spaceBetween: 30,
           },
           1024: {
             slidesPerView: 3,
