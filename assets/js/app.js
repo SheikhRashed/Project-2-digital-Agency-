@@ -22,13 +22,14 @@ AOS.init({
        
       });
 
-var swiper = new Swiper(".mySwiper", {
+ new Swiper(".mySwiper", {
+        loop:true,
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 100,
         centeredSlides: true,
         autoplay: {
           delay: 2500,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         },
         pagination: {
           el: ".swiper-pagination",
