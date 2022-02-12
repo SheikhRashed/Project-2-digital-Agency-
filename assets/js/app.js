@@ -15,16 +15,17 @@ function mobileMenu() {
 }
 
 AOS.init({
-        easing: 'ease-in-out-sine'
+       
       });
 
-var swiper = new Swiper(".mySwiper", {
+ new Swiper(".mySwiper", {
+        loop:true,
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 100,
         centeredSlides: true,
         autoplay: {
           delay: 2500,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         },
         pagination: {
           el: ".swiper-pagination",
@@ -32,12 +33,12 @@ var swiper = new Swiper(".mySwiper", {
         },
         breakpoints: {
           640: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 3,
-            spaceBetween: 40,
+            slidesPerView: 2,
+            spaceBetween: 30,
           },
           1024: {
             slidesPerView: 3,
