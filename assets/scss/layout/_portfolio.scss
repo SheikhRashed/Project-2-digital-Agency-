@@ -4,13 +4,8 @@
     z-index: 1;
   }
   .portfolio-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 45px 0;
-    @include max(580px) {
-      flex-direction: column;
-    }
+    
     .portfolio-item {
       background: #1e1e20;
       border-radius: 10px;
