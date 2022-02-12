@@ -9,11 +9,6 @@
 }
 
 body {
-  position: relative;
-  height: 100%;
-}
-
-body {
   font-family: "Nunito Sans", sans-serif;
   background-color: #19191B;
   color: #ffffff;
@@ -573,43 +568,6 @@ section {
   z-index: 1;
 }
 
-.portfolio-section .portfolio-wrap {
-  padding: 45px 0;
-}
-
-.portfolio-section .portfolio-wrap .portfolio-item {
-  background: #1e1e20;
-  border-radius: 10px;
-  padding: 16px;
-}
-
-.portfolio-section .portfolio-wrap .portfolio-item img {
-  width: 100%;
-}
-
-.portfolio-section .portfolio-wrap .portfolio-item--two {
-  margin-top: 60px;
-  text-align: center;
-}
-
-@media (max-width: 580px) {
-  .portfolio-section .portfolio-wrap .portfolio-item--two {
-    margin-top: 0px;
-  }
-}
-
-.portfolio-section .portfolio-wrap .portfolio-item--three {
-  margin-top: 100px;
-  text-align: right;
-}
-
-@media (max-width: 580px) {
-  .portfolio-section .portfolio-wrap .portfolio-item--three {
-    margin-top: 0px;
-    text-align: center;
-  }
-}
-
 .portfolio-section .portfolio-circle {
   position: absolute;
   top: 0;
@@ -704,11 +662,21 @@ section {
   height: 100%;
 }
 
-.swiper-slide {
+.swiper-wrapper {
+  margin: 30px 0;
+}
+
+@media (max-width: 768px) {
+  .swiper-wrapper {
+    margin: 50px 0;
+  }
+}
+
+.swiper-wrapper .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
+  color: black;
+  font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -720,12 +688,37 @@ section {
           align-items: center;
 }
 
-.swiper-slide img {
+.swiper-wrapper .swiper-slide a {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper .swiper-slide a img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.swiper-wrapper .swiper-slide--two {
+  margin: 60px 0;
+}
+
+@media (max-width: 768px) {
+  .swiper-wrapper .swiper-slide--two {
+    margin: 0 0;
+  }
+}
+
+.swiper-wrapper .swiper-slide--three {
+  margin: 100px 0;
+}
+
+@media (max-width: 768px) {
+  .swiper-wrapper .swiper-slide--three {
+    margin: 0 0;
+  }
 }
 
 .swiper-pagination-bullet-active {

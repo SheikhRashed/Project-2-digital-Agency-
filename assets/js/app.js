@@ -21,12 +21,7 @@ AOS.init({
  new Swiper(".mySwiper", {
         loop:true,
         slidesPerView: 1,
-        spaceBetween: 100,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: true,
-        },
+        spaceBetween: 10,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -38,7 +33,7 @@ AOS.init({
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 40,
           },
           1024: {
             slidesPerView: 3,
@@ -46,4 +41,3 @@ AOS.init({
           },
         },
       });
-

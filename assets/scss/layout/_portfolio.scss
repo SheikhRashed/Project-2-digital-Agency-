@@ -3,6 +3,7 @@
     position: relative;
     z-index: 1;
   }
+<<<<<<< HEAD
   .portfolio-wrap {
     padding: 45px 0;
     
@@ -30,6 +31,35 @@
       }
     }
   }
+=======
+  // .portfolio-wrap {
+  //   padding: 45px 0;
+
+  //   .portfolio-item {
+  //     background: #1e1e20;
+  //     border-radius: 10px;
+  //     padding: 16px;
+  //     img {
+  //       width: 100%;
+  //     }
+  //     &--two {
+  //       margin-top: 60px;
+  //       text-align: center;
+  //       @include max(580px) {
+  //         margin-top: 0px;
+  //       }
+  //     }
+  //     &--three {
+  //       margin-top: 100px;
+  //       text-align: right;
+  //       @include max(580px) {
+  //         margin-top: 0px;
+  //         text-align: center;
+  //       }
+  //     }
+  //   }
+  // }
+>>>>>>> 114785b4ebef1fc2283721c83e28c5a8fa0a8b87
   .portfolio-circle {
     position: absolute;
     top: 0;
