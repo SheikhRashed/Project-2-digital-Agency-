@@ -9,7 +9,7 @@
     position: relative;
     z-index: 1;
   }
-  .contact-wrap {
+  .contact {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -17,8 +17,7 @@
       text-align: left;
       margin: 0;
     }
-
-    .contact-btn {
+    .contact-right {
       float: right;
       @include max(767px) {
         flex: 0 0 100%;
