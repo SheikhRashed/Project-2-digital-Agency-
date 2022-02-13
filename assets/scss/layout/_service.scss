@@ -4,7 +4,7 @@
     z-index: 1;
   }
 
-  .service-wrap {
+  .service {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 60px;
@@ -17,22 +17,23 @@
     @include max(525px) {
       grid-template-columns: 1fr;
     }
-    .service-item {
+    .service-card {
       text-align: center;
-      .service-icon {
+      .service-card__icon {
+        margin-bottom: 15px;
         img {
           background: rgba(84, 84, 212, 0.1);
           padding: 10px;
           border-radius: 50%;
         }
       }
-      .service-content {
+      .service-card__content {
         padding: 0px 40px;
         @include max(991px) {
           padding: 0px 10px;
         }
         h3 {
-          margin: 15px 0;
+          margin-bottom: 15px;
         }
       }
     }
