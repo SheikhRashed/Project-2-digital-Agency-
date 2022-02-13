@@ -14,13 +14,16 @@
       padding-right: 10px;
       width: 100%;
     }
-
+    @include max(425px) {
+      padding-top: 0;
+    }
     h1 {
       padding-bottom: 30px;
       @include max(767px) {
         font-size: 42px;
         line-height: 63px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
+        padding-right: 20px;
       }
     }
     p {
@@ -28,6 +31,7 @@
       @include max(480px) {
         font-size: 16px;
         line-height: 24px;
+        padding-bottom: 40px;
       }
     }
   }
@@ -40,7 +44,13 @@
     @include max(991px) {
       width: 100%;
     }
-    .hero__right-bg {
+
+    &-person {
+      @include max(480px) {
+        width: 80%;
+      }
+    }
+    &-bg {
       width: 60%;
       position: absolute;
       top: 34px;
@@ -48,6 +58,11 @@
       z-index: -1;
       bottom: -40px;
       user-select: none;
+      @include max(480px) {
+        text-align: center;
+        width: 64%;
+        left: 60px;
+      }
     }
     position: relative;
 
@@ -72,6 +87,33 @@
     .hero-plus-svg {
       bottom: -80px;
       right: 80px;
+    }
+
+    @include max(480px) {
+      margin-top: 90px;
+      text-align: center;
+      .hero-svg {
+        position: absolute;
+        z-index: -1;
+        user-select: none;
+        width: auto;
+      }
+      .hero-rate-svg {
+        top: 5px;
+        left: 10px;
+      }
+      .hero-circle-svg {
+        top: 0;
+        right: 30px;
+      }
+      .hero-triangle-svg {
+        bottom: -70px;
+        left: -10px;
+      }
+      .hero-plus-svg {
+        bottom: -35px;
+        right: 50px;
+      }
     }
   }
 }

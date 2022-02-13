@@ -82,14 +82,18 @@ ol {
 section {
   padding: 50px 0;
   overflow: hidden;
+  @include max(480px) {
+    padding: 15px 0;
+  }
 }
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
   @include max(480px) {
     max-width: 100%;
-    padding: 0 40px;
+    padding: 0 24px;
   }
 }
 .svg-animation {
