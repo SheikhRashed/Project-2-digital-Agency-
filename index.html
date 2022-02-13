@@ -8,7 +8,9 @@
 		<!-- Link Magnific-popup's CSS -->
 		<link rel="stylesheet" href="assets/css/magnific-popup.css">
 		<!-- Link Aos's CSS -->
-		<link href="assets/css/aos.css" rel="stylesheet">
+		<!-- <link href="assets/css/aos.css" rel="stylesheet"> -->
+		<!-- font awesome cdn  -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 		<!-- Link Swiper's CSS -->
 		<link rel="stylesheet" href="assets/css/swiper/swiper-bundle.min.css" />
 		<!-- Main CSS -->
@@ -52,13 +54,13 @@
 							<a class="btn" href="#">Our Services <img src="assets/images/icon/Icon.svg" alt=""></a>
 						</div>
 						<div class="hero__right">
-							<img  src="assets/images/person.png" alt="">
+							<img  class="hero__right-person" src="assets/images/person.png" alt="">
 							<img  class="hero__right-bg" src="assets/images/person-rectangle.png" alt="" >
 
-							<img class="svg-animation hero-svg hero-rate-svg" src="./assets/images/icon/rate.svg" alt="">
-							<img  class="svg-animation hero-svg hero-circle-svg" src="./assets/images/icon/circle.svg" alt="">
-							<img data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"class=" hero-svg hero-triangle-svg" src="./assets/images/icon/triangle.svg" alt="">
-							<img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class=" hero-svg hero-plus-svg" src="./assets/images/icon/plus.svg" alt="">
+							<img  class="svg-animation hero-svg hero-rate-svg" src="./assets/images/icon/rate.svg" alt="">
+							<img  class="svg-animation hero-svg hero-circle-svg" src="./assets/images/icon/big-circle.svg" alt="">
+							<img  class="svg-animation hero-svg hero-triangle-svg" src="./assets/images/icon/triangle.svg" alt="">
+							<img  class="svg-animation hero-svg hero-plus-svg" src="./assets/images/icon/plus.svg" alt="">
 						</div>
 					</div>
 				</div>
@@ -76,10 +78,8 @@
 							<p>Watch this one minute video so you understand why you should use our services!</p>
 						</div>
 					</div>
-					<div class="about-bottom" data-aos="fade-right"
-						data-aos-offset="300"
-						data-aos-easing="ease-in-sine">
-						<a class="popup-youtube" href="https://www.youtube.com/watch?v=hsQ0KLQ3pRM"><img class="play-btn" src="assets/images/Play.png" alt="play"></a>
+					<div class="about-bottom">
+						<a class="popup-youtube" href="https://www.youtube.com/watch?v=hsQ0KLQ3pRM"><i class="fa-solid fa-play"></i></a>
 						<img src="assets/images/about.png" alt="enver">
 					</div>
 					
@@ -88,15 +88,13 @@
 			<!-- Service section -->
 			<section class="service-section"  >
 				<div class="container">
-					<div class="section__title" data-aos="fade-right"
-						data-aos-offset="300"
-						data-aos-easing="ease-in-sine">
+					<div class="section__title">
 						<h2>
 							The Service We Provide For You
 						</h2>
 					</div>
 					<div class="service-wrap" >
-						<div class="service-item" data-aos="flip-left">
+						<div class="service-item" >
 							<div class="service-icon" >
 								<img src="./assets/images/icon/service-01.svg" alt="">
 							</div>
@@ -105,7 +103,7 @@
 								<p>Create a platform with the best and coolest quality from us.</p>
 							</div>
 						</div>
-						<div class="service-item" data-aos="flip-left">
+						<div class="service-item" >
 							<div class="service-icon">
 								<img src="./assets/images/icon/service-02.svg" alt="">
 							</div>
@@ -114,7 +112,7 @@
 								<p>Create a platform with the best and coolest quality from us.</p>
 							</div>
 						</div>
-						<div class="service-item" data-aos="flip-left">
+						<div class="service-item">
 							<div class="service-icon">
 								<img src="./assets/images/icon/service-03.svg" alt="">
 							</div>
@@ -123,7 +121,7 @@
 								<p>Create a platform with the best and coolest quality from us.</p>
 							</div>
 						</div>
-						<div class="service-item" data-aos="flip-left">
+						<div class="service-item">
 							<div class="service-icon">
 								<img src="./assets/images/icon/service-04.svg" alt="">
 							</div>
@@ -132,7 +130,7 @@
 								<p>Create a platform with the best and coolest quality from us.</p>
 							</div>
 						</div>
-						<div class="service-item" data-aos="flip-left">
+						<div class="service-item">
 							<div class="service-icon">
 								<img src="./assets/images/icon/service-05.svg" alt="">
 							</div>
@@ -141,7 +139,7 @@
 								<p>Create a platform with the best and coolest quality from us.</p>
 							</div>
 						</div>
-						<div class="service-item" data-aos="flip-left">
+						<div class="service-item">
 							<div class="service-icon">
 								<img src="./assets/images/icon/service-06.svg" alt="">
 							</div>
@@ -160,56 +158,27 @@
 			<!-- Portfolio section  -->
 			<section class="portfolio-section" >
 				<div class="container">
-					<h2 data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+					<h2>
 						Our Awesome Portofolio
 					</h2>
 					<div class=" swiper mySwiper">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide swiper-slide--one">
+							<div class="swiper-slide">
 								<a href="">
 								<img src="./assets/images/portfolio-01.png" alt="">
 								</a>
 							</div>
-							<div class="swiper-slide swiper-slide--two">
+							<div class="swiper-slide">
 								<a href="">
 								<img src="./assets/images/portfolio-02.png" alt="">
 								</a>
 							</div>
-							<div class="swiper-slide swiper-slide--three">
+							<div class="swiper-slide">
 								<a href="">
 								<img src="./assets/images/portfolio-03.png" alt="">
 								</a>
 							</div>
-							<div class="swiper-slide swiper-slide--one">
-								<a href="">
-								<img src="./assets/images/portfolio-01.png" alt="">
-								</a>
-							</div>
-							<div class="swiper-slide swiper-slide--two">
-								<a href="">
-								<img src="./assets/images/portfolio-02.png" alt="">
-								</a>
-							</div>
-							<div class="swiper-slide swiper-slide--three">
-								<a href="">
-								<img src="./assets/images/portfolio-03.png" alt="">
-								</a>
-							</div>
-							<div class="swiper-slide swiper-slide--one">
-								<a href="">
-								<img src="./assets/images/portfolio-01.png" alt="">
-								</a>
-							</div>
-							<div class="swiper-slide swiper-slide--two">
-								<a href="">
-								<img src="./assets/images/portfolio-02.png" alt="">
-								</a>
-							</div>
-							<div class="swiper-slide swiper-slide--three">
-								<a href="">
-								<img src="./assets/images/portfolio-03.png" alt="">
-								</a>
-							</div>
+							
 						</div>
 						<div class="swiper-pagination"></div>
 					</div>
@@ -221,10 +190,10 @@
 			<section class="contact-section">
 				<div class="container">
 					<div class="contact-wrap">
-						<div class="section__title" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+						<div class="section__title">
 							<h2>Contact us for the service you want to use</h2>
 						</div>
-						<div class="contact-btn" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+						<div class="contact-btn">
 							<a class="btn" href="#">Contact Us</a>
 						</div>
 					</div>

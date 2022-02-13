@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-bottom: 50px;
   @include max(767px) {
     display: block;
   }
@@ -32,28 +33,24 @@
   }
   &__right {
     width: 50%;
+    height: 300px;
+    max-width: 100%;
     position: relative;
     z-index: 1;
     @include max(991px) {
       width: 100%;
     }
     .hero__right-bg {
-      width: 80%;
+      width: 60%;
       position: absolute;
-      top: 30px;
-      left: 60px;
+      top: 34px;
+      left: 40px;
       z-index: -1;
       bottom: -40px;
       user-select: none;
     }
     position: relative;
-    img {
-      width: 100%;
-      position: relative;
-      @include max(991px) {
-        margin-top: 30px;
-      }
-    }
+
     .hero-svg {
       position: absolute;
       z-index: -1;
@@ -61,20 +58,20 @@
       width: auto;
     }
     .hero-rate-svg {
-      top: 0;
-      left: 0;
+      top: 33px;
+      left: -60px;
     }
     .hero-circle-svg {
       top: 0;
-      right: 0;
+      right: 80px;
     }
     .hero-triangle-svg {
-      bottom: 0;
-      left: 0;
+      bottom: -110px;
+      left: -70px;
     }
     .hero-plus-svg {
-      bottom: 0;
-      right: 0;
+      bottom: -80px;
+      right: 80px;
     }
   }
 }
