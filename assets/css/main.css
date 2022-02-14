@@ -108,42 +108,42 @@ section {
 }
 
 .svg-animation {
-  -webkit-animation: move 1.5s infinite;
-          animation: move 1.5s infinite;
+  -webkit-animation: move 1.75s infinite;
+          animation: move 1.75s infinite;
 }
 
 @-webkit-keyframes move {
   from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
     opacity: 1;
   }
   50% {
-    -webkit-transform: scale(0.75);
-            transform: scale(0.75);
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
     opacity: 0.25;
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
     opacity: 1;
   }
 }
 
 @keyframes move {
   from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
     opacity: 1;
   }
   50% {
-    -webkit-transform: scale(0.75);
-            transform: scale(0.75);
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
     opacity: 0.25;
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
     opacity: 1;
   }
 }
