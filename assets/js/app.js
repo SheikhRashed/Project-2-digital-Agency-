@@ -14,18 +14,25 @@ function mobileMenu() {
     }
 }
 
-AOS.init({
-       
-      });
+
 
  new Swiper(".mySwiper", {
         loop:true,
         slidesPerView: 1,
         spaceBetween: 16,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         pagination: {
           dynamicBullets: true,
           el: ".swiper-pagination",
           clickable: true,
+        },
+         navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
         breakpoints: {
           640: {
