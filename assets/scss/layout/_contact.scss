@@ -12,11 +12,16 @@
   .contact {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     .contact-left {
+      flex: 0 0 55%;
+      @include max(767px){
+        flex: 0 0 100%;
+      }
       h2{
         text-align: left;
-        width: 500px;
+        padding-right: 15px;
         margin: 0;
         @include max(767px){
           width: 100%;
@@ -25,7 +30,16 @@
       }
     }
     .contact-right {
-      float: right;
+      flex: 0 0 45%;
+      @include max(767px){
+        flex: 0 0 100%;
+      }
+      .btn{
+        margin-left: auto;
+        @include max(767px){
+          margin: 0 auto;
+        }
+      }
       @include max(767px) {
         flex: 0 0 100%;
         text-align: center;
