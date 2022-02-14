@@ -577,6 +577,12 @@ section {
   z-index: 1;
 }
 
+@media (max-width: 767px) {
+  .service-section .container {
+    padding: 140px 15px;
+  }
+}
+
 .service-section .service {
   display: -ms-grid;
   display: grid;
@@ -644,6 +650,12 @@ section {
           user-select: none;
 }
 
+@media (max-width: 767px) {
+  .service-section .service-triangle {
+    left: 0px;
+  }
+}
+
 .service-section .service-cross-right {
   position: absolute;
   top: 50px;
@@ -682,6 +694,13 @@ section {
           user-select: none;
 }
 
+@media (max-width: 767px) {
+  .portfolio-section .portfolio-circle {
+    top: 40px;
+    right: 30px;
+  }
+}
+
 .portfolio-section .portfolio-rate {
   position: absolute;
   bottom: 0;
@@ -691,6 +710,12 @@ section {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+@media (max-width: 767px) {
+  .portfolio-section .portfolio-rate {
+    left: 15px;
+  }
 }
 
 .contact-section {
@@ -720,9 +745,17 @@ section {
       flex-wrap: wrap;
 }
 
-.contact-section .contact .section__title {
+.contact-section .contact .contact-left h2 {
   text-align: left;
+  width: 500px;
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  .contact-section .contact .contact-left h2 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 
 .contact-section .contact .contact-right {
@@ -760,6 +793,12 @@ section {
           user-select: none;
 }
 
+@media (max-width: 767px) {
+  .contact-section .contact-circle {
+    left: 15px;
+  }
+}
+
 .swiper {
   position: relative;
   padding: 50px 0;
@@ -767,6 +806,12 @@ section {
 
 .swiper-wrapper {
   padding: 30px 0;
+}
+
+@media (max-width: 767px) {
+  .swiper-wrapper {
+    padding: 0px;
+  }
 }
 
 .swiper-slide {
@@ -791,6 +836,12 @@ section {
 
 .swiper-slide-active {
   margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .swiper-slide-active {
+    margin-top: 0px;
+  }
 }
 
 .swiper-slide-next {

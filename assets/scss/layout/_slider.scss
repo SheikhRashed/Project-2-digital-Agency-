@@ -3,6 +3,9 @@
   padding: 50px 0;
   &-wrapper {
     padding: 30px 0;
+    @include max(767px){
+      padding: 0px;
+    }
   }
   &-slide {
     width: 255px;
@@ -22,6 +25,9 @@
     }
     &-active {
       margin-top: 40px;
+      @include max(767px){
+        margin-top: 0px;
+      }
     }
     &-next {
       margin-top: 80px;

@@ -13,9 +13,16 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    .section__title {
-      text-align: left;
-      margin: 0;
+    .contact-left {
+      h2{
+        text-align: left;
+        width: 500px;
+        margin: 0;
+        @include max(767px){
+          width: 100%;
+          margin-bottom: 50px;
+        }
+      }
     }
     .contact-right {
       float: right;
@@ -36,6 +43,9 @@
     position: absolute;
     bottom: -80px;
     left: 80px;
+    @include max(767px){
+      left: 15px;
+    }
     z-index: -1;
     user-select: none;
   }

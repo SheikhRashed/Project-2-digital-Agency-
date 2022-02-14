@@ -1,7 +1,11 @@
 .service-section {
+  
   .container {
     position: relative;
     z-index: 1;
+    @include max(767px){
+    padding: 140px 15px;
+  }
   }
 
   .service {
@@ -42,6 +46,9 @@
     position: absolute;
     top: 0;
     left: 155px;
+    @include max(767px){
+      left: 0px;
+    }
     z-index: -1;
     user-select: none;
   }
