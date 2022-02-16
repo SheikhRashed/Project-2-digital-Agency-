@@ -908,30 +908,33 @@ section {
   border-radius: 7px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 525px) {
   .swiper-pagination-bullet {
     display: none;
   }
 }
 
-.swiper-button-next {
+.swiper-button-next, .swiper-button-prev {
+  top: 90%;
   display: none;
 }
 
-@media (max-width: 480px) {
-  .swiper-button-next {
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 20px;
+}
+
+@media (max-width: 525px) {
+  .swiper-button-next, .swiper-button-prev {
     display: block;
   }
+}
+
+.swiper-button-next {
+  right: 40%;
 }
 
 .swiper-button-prev {
-  display: none;
-}
-
-@media (max-width: 480px) {
-  .swiper-button-prev {
-    display: block;
-  }
+  left: 40%;
 }
 
 .footer-section {
