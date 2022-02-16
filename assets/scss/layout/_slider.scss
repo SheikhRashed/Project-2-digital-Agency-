@@ -2,7 +2,7 @@
   position: relative;
   padding: 50px 0;
   @include max(480px) {
-    padding: 30px;
+    padding: 10px 30px;
   }
   &-wrapper {
     padding: 30px 0;
@@ -13,6 +13,9 @@
   &-slide {
     width: 255px;
     height: 200px;
+    @include max(767px) {
+      height: 246px;
+    }
     border-radius: 10px;
     border: 20px solid #1e1e20;
     a {
@@ -28,19 +31,19 @@
     }
     &-active {
       margin-top: 40px;
-      @include max(767px) {
+      @include max(768px) {
         margin-top: 0;
       }
     }
     &-next {
       margin-top: 80px;
-      @include max(767px) {
+      @include max(768px) {
         margin-top: 0;
       }
     }
     &-duplicate-prev {
       margin-top: 120px;
-      @include max(767px) {
+      @include max(768px) {
         margin-top: 0;
       }
     }
@@ -53,25 +56,20 @@
   height: 5px;
   border-radius: 7px;
 }
-.swiper-pagination-bullet {
-  @include max(525px) {
-    display: none;
-  }
-}
 
-.swiper-button-next, .swiper-button-prev {
-  top: 90%;
-  display: none;
-  &:after{
-    font-size: 20px;
-  }
-  @include max(525px) {
-    display: block;
-  }
-}
-.swiper-button-next{
-  right: 40%;
-}
-.swiper-button-prev {
-  left: 40%;
-}
+// .swiper-button-next, .swiper-button-prev {
+//   top: 90%;
+//   display: none;
+//   &:after{
+//     font-size: 20px;
+//   }
+//   @include max(525px) {
+//     display: block;
+//   }
+// }
+// .swiper-button-next{
+//   right: 40%;
+// }
+// .swiper-button-prev {
+//   left: 40%;
+// }

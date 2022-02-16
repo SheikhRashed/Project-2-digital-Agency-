@@ -12,7 +12,11 @@
 
     @include max(991px) {
       padding-right: 10px;
-      width: 100%;
+      width: 65%;
+    }
+    @include max(768px) {
+      padding-right: 10px;
+      width: 75%;
     }
     @include max(425px) {
       padding-top: 0;
@@ -123,7 +127,7 @@
     }
 
     @include max(480px) {
-      margin-top: 90px;
+      margin-top: 70px;
       text-align: center;
       .hero-svg {
         position: absolute;
