@@ -97,19 +97,19 @@ section {
   }
 }
 .svg-animation {
-  animation: move 1.5s infinite;
+  animation: move 1.75s infinite;
 }
 @keyframes move {
   from {
-    transform: scale(1);
+    transform: scale(0.75);
     opacity: 1;
   }
   50% {
-    transform: scale(0.75);
+    transform: scale(0.50);
     opacity: 0.25;
   }
   to {
-    transform: scale(1);
+    transform: scale(0.75);
     opacity: 1;
   }
 }

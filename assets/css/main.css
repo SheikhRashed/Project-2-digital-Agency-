@@ -108,42 +108,42 @@ section {
 }
 
 .svg-animation {
-  -webkit-animation: move 1.5s infinite;
-          animation: move 1.5s infinite;
+  -webkit-animation: move 1.75s infinite;
+          animation: move 1.75s infinite;
 }
 
 @-webkit-keyframes move {
   from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
     opacity: 1;
   }
   50% {
-    -webkit-transform: scale(0.75);
-            transform: scale(0.75);
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
     opacity: 0.25;
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
     opacity: 1;
   }
 }
 
 @keyframes move {
   from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
     opacity: 1;
   }
   50% {
-    -webkit-transform: scale(0.75);
-            transform: scale(0.75);
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
     opacity: 0.25;
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
     opacity: 1;
   }
 }
@@ -615,17 +615,25 @@ section {
   height: 45px;
 }
 
+@media (max-width: 525px) {
+  .about-section .about-bottom a {
+    width: 25px;
+    height: 25px;
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+
 .about-section .about-bottom a i {
   position: absolute;
   top: 40%;
   left: 44%;
 }
 
-@media (max-width: 480px) {
-  .about-section .about-bottom a {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
+@media (max-width: 525px) {
+  .about-section .about-bottom a i {
+    top: 35%;
+    left: 41%;
   }
 }
 
@@ -965,30 +973,33 @@ section {
   border-radius: 7px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 525px) {
   .swiper-pagination-bullet {
     display: none;
   }
 }
 
-.swiper-button-next {
+.swiper-button-next, .swiper-button-prev {
+  top: 90%;
   display: none;
 }
 
-@media (max-width: 480px) {
-  .swiper-button-next {
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 20px;
+}
+
+@media (max-width: 525px) {
+  .swiper-button-next, .swiper-button-prev {
     display: block;
   }
+}
+
+.swiper-button-next {
+  right: 40%;
 }
 
 .swiper-button-prev {
-  display: none;
-}
-
-@media (max-width: 480px) {
-  .swiper-button-prev {
-    display: block;
-  }
+  left: 40%;
 }
 
 .footer-section {
