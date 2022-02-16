@@ -558,10 +558,26 @@ section {
   height: 45px;
 }
 
+@media (max-width: 525px) {
+  .about-section .about-bottom a {
+    width: 25px;
+    height: 25px;
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+
 .about-section .about-bottom a i {
   position: absolute;
   top: 40%;
   left: 44%;
+}
+
+@media (max-width: 525px) {
+  .about-section .about-bottom a i {
+    top: 35%;
+    left: 41%;
+  }
 }
 
 @media (max-width: 480px) {
