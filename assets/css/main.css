@@ -97,13 +97,13 @@ section {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 
 @media (max-width: 480px) {
   .container {
     max-width: 100%;
-    padding: 0 24px;
+    padding: 0 15px;
   }
 }
 
@@ -374,6 +374,15 @@ section {
 @media (max-width: 991px) {
   .hero__right {
     width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__right-person {
+    width: 70%;
   }
 }
 
@@ -394,6 +403,22 @@ section {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+@media (max-width: 991px) {
+  .hero__right-bg {
+    width: 35%;
+    left: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__right-bg {
+    width: 50%;
+    text-align: center;
+    top: 10%;
+    left: 20%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -419,6 +444,18 @@ section {
   left: -60px;
 }
 
+@media (max-width: 991px) {
+  .hero__right .hero-rate-svg {
+    left: 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__right .hero-rate-svg {
+    left: 10%;
+  }
+}
+
 .hero__right .hero-circle-svg {
   top: 0;
   right: 80px;
@@ -429,9 +466,29 @@ section {
   left: -70px;
 }
 
+@media (max-width: 991px) {
+  .hero__right .hero-triangle-svg {
+    left: 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__right .hero-triangle-svg {
+    left: 8%;
+    bottom: 0;
+  }
+}
+
 .hero__right .hero-plus-svg {
   bottom: -80px;
   right: 80px;
+}
+
+@media (max-width: 768px) {
+  .hero__right .hero-plus-svg {
+    right: 8%;
+    bottom: 7%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -875,7 +932,7 @@ section {
   margin-top: 40px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .swiper-slide-active {
     margin-top: 0;
   }
@@ -885,7 +942,7 @@ section {
   margin-top: 80px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .swiper-slide-next {
     margin-top: 0;
   }
@@ -895,7 +952,7 @@ section {
   margin-top: 120px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .swiper-slide-duplicate-prev {
     margin-top: 0;
   }

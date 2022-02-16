@@ -90,10 +90,10 @@ section {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 15px;
   @include max(480px) {
     max-width: 100%;
-    padding: 0 24px;
+    padding: 0 15px;
   }
 }
 .svg-animation {

@@ -43,9 +43,15 @@
     z-index: 1;
     @include max(991px) {
       width: 100%;
+      height: auto;
+      text-align: center;
+      margin-top: 50px;
     }
 
     &-person {
+      @include max(768px) {
+        width: 70%;
+      }
       @include max(480px) {
         width: 80%;
       }
@@ -58,6 +64,16 @@
       z-index: -1;
       bottom: -40px;
       user-select: none;
+      @include max(991px) {
+        width: 35%;
+        left: 30%;
+      }
+      @include max(768px) {
+        width: 50%;
+        text-align: center;
+        top: 10%;
+        left: 20%;
+      }
       @include max(480px) {
         text-align: center;
         width: 64%;
@@ -75,6 +91,12 @@
     .hero-rate-svg {
       top: 33px;
       left: -60px;
+      @include max(991px) {
+        left: 8%;
+      }
+      @include max(768px) {
+        left: 10%;
+      }
     }
     .hero-circle-svg {
       top: 0;
@@ -83,10 +105,21 @@
     .hero-triangle-svg {
       bottom: -110px;
       left: -70px;
+      @include max(991px) {
+        left: 8%;
+      }
+      @include max(768px) {
+        left: 8%;
+        bottom: 0;
+      }
     }
     .hero-plus-svg {
       bottom: -80px;
       right: 80px;
+      @include max(768px) {
+        right: 8%;
+        bottom: 7%;
+      }
     }
 
     @include max(480px) {
