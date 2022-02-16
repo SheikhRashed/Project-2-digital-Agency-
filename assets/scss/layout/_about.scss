@@ -74,11 +74,6 @@
           left: 41%;
         }
       }
-      @include max(480px) {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-      }
     }
   }
 }

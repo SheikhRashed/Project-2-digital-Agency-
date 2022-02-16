@@ -580,14 +580,6 @@ section {
   }
 }
 
-@media (max-width: 480px) {
-  .about-section .about-bottom a {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-  }
-}
-
 .service-section .container {
   position: relative;
   z-index: 1;
