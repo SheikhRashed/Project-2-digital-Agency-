@@ -43,3 +43,9 @@ function mobileMenu() {
           },
         },
       });
+
+      gsap.fromTo(
+          "#logo",
+          { width: 0, height: 0 },
+          { duration: 1.5, width: 100, height: 30}
+      );

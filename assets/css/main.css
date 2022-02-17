@@ -369,6 +369,10 @@ section {
   }
 }
 
+.hero__left a span {
+  margin-right: 9px;
+}
+
 .hero__right {
   width: 50%;
   height: 300px;
