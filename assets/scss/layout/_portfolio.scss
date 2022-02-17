@@ -1,4 +1,8 @@
 .portfolio-section {
+  padding-bottom: 100px;
+  @include max (480px){
+    padding-bottom: 130px;
+  }
   .container {
     position: relative;
     z-index: 1;
