@@ -716,9 +716,20 @@ section {
 }
 
 .service-section .service .service-card .service-card__icon img {
-  background: rgba(84, 84, 212, 0.1);
   padding: 10px;
   border-radius: 50%;
+}
+
+.service-section .service .service-card .service-card__icon--one img, .service-section .service .service-card .service-card__icon--five img {
+  background: rgba(84, 84, 212, 0.1);
+}
+
+.service-section .service .service-card .service-card__icon--two img, .service-section .service .service-card .service-card__icon--six img {
+  background: rgba(240, 64, 55, 0.1);
+}
+
+.service-section .service .service-card .service-card__icon--three img, .service-section .service .service-card .service-card__icon--four img {
+  background: rgba(254, 220, 90, 0.1);
 }
 
 .service-section .service .service-card .service-card__content {

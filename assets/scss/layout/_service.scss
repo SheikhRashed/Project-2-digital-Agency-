@@ -27,9 +27,23 @@
       .service-card__icon {
         margin-bottom: 15px;
         img {
-          background: rgba(84, 84, 212, 0.1);
           padding: 10px;
           border-radius: 50%;
+        }
+        &--one, &--five{
+          img{
+            background: rgba(84, 84, 212, 0.1);
+          }
+        }
+        &--two, &--six{
+          img{
+            background: rgba(240, 64, 55, 0.1)
+          }
+        }
+        &--three, &--four{
+          img{
+            background: rgba(254, 220, 90, 0.1);
+          }
         }
       }
       .service-card__content {
